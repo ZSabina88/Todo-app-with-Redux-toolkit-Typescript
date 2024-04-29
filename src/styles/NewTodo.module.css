@@ -1,39 +1,44 @@
 .form {
-    width: 100%;
-    margin: 2rem auto;
-    overflow: hidden;
-    border: 1px solid #fff;
-  }
-  
-  /* .form input {
-    display: block;
-    width: 90%;
-    font: inherit;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-    background-color: #f7f5ef;
-    border: none;
-    margin-bottom: 0.5rem;
-  }
-  
-  .form button {
-    font: inherit;
-    background-color: #ebb002;
-    border: 1px solid #ebb002;
-    color: #201d0f;
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .form button:hover,
-  .form button:active {
-    background-color: #ebc002;
-    border-color: #ebc002;
-  } */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  overflow: hidden;
+  gap: 0.5rem;
+}
 
-  /* @media screen and (max-width: 500px)  {
+.form input {
+  display: block;
+  width: 96%;
+  font: inherit;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #f7f5ef;
+  border: none;
+  margin: 0.5rem 0;
+  align-self: center;
+}
+
+.form button {
+  font: inherit;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 9rem;
+  align-self: end;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: var(--color-puprple);
+  border: 1px solid #fff;
+}
+
+/* @media screen and (max-width: 500px)  {
     .form {
       width: 16rem;
     }
