@@ -16,7 +16,7 @@ const NewTodo: React.FC<NewTodoProps> = ({ value, updateText, handleAction, onKe
   }, [])
 
   return (
-    <div className={classes.form}>
+    <section className={classes.form}>
       <input 
       ref={inputRef}
       placeholder="New Todo"
@@ -25,7 +25,7 @@ const NewTodo: React.FC<NewTodoProps> = ({ value, updateText, handleAction, onKe
       onKeyDown={onKeyDown}
        />
        <button onClick={handleAction}>Add Todo</button>
-    </div>
+    </section>
   );
 }
 

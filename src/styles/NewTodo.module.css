@@ -34,7 +34,7 @@
 
 .form button:hover,
 .form button:active {
-  background-color: var(--color-puprple);
+  background-color: rgba(var(--color1));
   border: 1px solid #fff;
 }
 

@@ -13,17 +13,19 @@ const TodoItem: React.FC<TodoItemProps> = ({ id, title, completed }) => {
   const dispatch = useAppDispatch();
 
   return (
-    <li className={classes.item}>
-      <input
-        type="checkbox"
-        checked={completed}
-        onChange={() => dispatch(toggleComplete(id))}
-      />
-      <span>{title}</span>
-      <span className={classes.x} onClick={() => dispatch(removeTodo(id))}>
-        <IoClose color="var(--color-puprple)" size="30px"/>
-      </span>
-    </li>
+    <>
+      <li id="fade" className={classes.item}>
+        <input
+          type="checkbox"
+          checked={completed}
+          onChange={() => dispatch(toggleComplete(id))}
+        />
+        <span>{title}</span>
+        <span className={classes.x} onClick={() => dispatch(removeTodo(id))}>
+          <IoClose color="var(--color-puprple)" size="30px" />
+        </span>
+      </li>
+    </>
   );
 }
 
