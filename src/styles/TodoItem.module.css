@@ -2,10 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 80% 1fr;
   margin: 1rem 0;
-  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); */
   padding: 1rem;
-  /* border: 1px solid #fff; */
-  /* border-radius: 5px; */
 
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;

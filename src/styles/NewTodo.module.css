@@ -37,9 +37,3 @@
   background-color: rgba(var(--color1));
   border: 1px solid #fff;
 }
-
-/* @media screen and (max-width: 500px)  {
-    .form {
-      width: 16rem;
-    }
-  } */

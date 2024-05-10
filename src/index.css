@@ -29,7 +29,7 @@ body {
 }
 
 .gradientBg {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
   position: absolute;
@@ -42,6 +42,7 @@ body {
   width: 100vw;
   height: 100vh;
   filter: url(#goo) blur(40px) ;
+  overflow: hidden;
 }
 
 .gradient1 {
@@ -173,3 +174,9 @@ body {
     transform: translateX(-50%) translateY(-10%);
   }
 }
+
+/* @media screen and (min-width: 250px)  {
+    body {
+      overflow: hidden;
+    }
+  } */
