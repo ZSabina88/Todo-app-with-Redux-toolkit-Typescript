@@ -20,7 +20,7 @@
   align-self: center;
 }
 
-.form button {
+.flex button {
   font: inherit;
   color: #fff;
   padding: 0.5rem 1.5rem;
@@ -32,8 +32,17 @@
   align-self: end;
 }
 
-.form button:hover,
-.form button:active {
+.flex button:hover,
+.flex button:active {
   background-color: rgba(var(--color1));
   border: 1px solid #fff;
+}
+
+.flex{
+  display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   gap: 14rem;
+   padding: 0 20px;
 }

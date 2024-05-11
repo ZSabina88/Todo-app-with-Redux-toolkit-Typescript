@@ -7,6 +7,7 @@ import Header from './components/Header';
 import { addTodo } from './store/todoSlice';
 import Container from './components/Container';
 
+
 function App() {
   const [text, setText] = useState("");
   const dispatch = useAppDispatch();
@@ -27,16 +28,16 @@ function App() {
 
   return (
     <>
-        <Container>
-          <Header />
-          <NewTodo
-            value={text}
-            handleAction={handleAction}
-            updateText={setText}
-            onKeyDown={handleKeyDown}
-          />
-          <Todos />
-        </Container>
+      <Container>
+        <Header />
+        <NewTodo
+          value={text}
+          handleAction={handleAction}
+          updateText={setText}
+          onKeyDown={handleKeyDown}
+        />
+        <Todos />
+      </Container>
     </>
   )
 }
