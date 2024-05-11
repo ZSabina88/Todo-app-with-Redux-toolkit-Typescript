@@ -1,9 +1,9 @@
-
+import classes from "../styles/Header.module.css";
 
 const Header = () => {
   return (
-    <header>
-      header
+    <header className={classes.header}>
+      <h1>Todo List</h1>
     </header>
   );
 }

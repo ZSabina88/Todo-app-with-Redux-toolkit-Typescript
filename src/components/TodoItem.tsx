@@ -22,7 +22,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ id, title, completed }) => {
         />
         <span>{title}</span>
         <span className={classes.x} onClick={() => dispatch(removeTodo(id))}>
-          <IoClose color="var(--color-puprple)" size="30px" />
+          <IoClose color="rgba(var(--color1))" size="30px" />
         </span>
       </li>
     </>

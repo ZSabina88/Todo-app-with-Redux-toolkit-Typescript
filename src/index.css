@@ -1,7 +1,9 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Lemon", serif, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-style: normal;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -27,6 +29,8 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
+
+
 
 .gradientBg {
   width: 100%;
@@ -118,19 +122,6 @@ body {
 
   transform-origin: calc(50% - 800px) calc(50% + 200px);
   animation: moveInCircle 20s ease infinite;
-}
-
-.interactive {
-  position: absolute;
-  background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
-  mix-blend-mode: var(--blending);
-
-  width: 100%;
-  height: 100%;
-  top: -50%;
-  left: -50%;
-
-  opacity: 0.7;
 }
 
 @keyframes moveInCircle {
